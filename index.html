@@ -67,7 +67,7 @@
 </p>
 
 <p>
-    Overall, the data has good structure and organization for the information across the different fields. However, there are some data quality issues that need to be addressed to make this dataset useful in understanding what is going on. There are some columns in the raw dataset that are unclear or unnecessary that can be cleaned up, such as column “case_dispo” which is ‘MO’ for each case and “manner_of_death” which is “Accident” which is redundant as the entire dataset is for accidental deaths. The entire column for “decedent_zip” is blank, indicating that this is no longer a value being recorded but may have been before or the information was not available to be shared. These columns may have been useful as part of the larger dataset this information was documented in but can be removed for clarity in this subset. Furthermore, the raw dataset also uses encodings for the deceased’s race where their race is abbreviated by their first letter, like ‘W” for white and ‘B’ for black, which could be made clearer in the dataset instead of including it into the ‘Data Dictionary’ on the website. Lastly, the column ‘incident_zip’ actually represents the zip code for the medical examiner's office that receives the body, instead of the location of the overdose - which is what the name initially suggests at first glance. 
+    Overall, the data has good structure and organization for the information across the different fields. However, there are some data quality issues that need to be addressed to make this dataset useful in understanding what is going on. There are some columns in the raw dataset that are unclear or unnecessary that can be cleaned up, such as column “case_dispo” which is ‘MO’ for each case, and “manner_of_death” which is “Accident” which is redundant as the entire dataset is for accidental deaths. The entire column for “decedent_zip” is blank, indicating that this is no longer a value being recorded but may have been before or the information was not available to be shared. These columns may have been useful as part of the larger dataset this information was documented in but can be removed for clarity in this subset. Furthermore, the raw dataset also uses encodings for the deceased’s race where their race is abbreviated by their first letter, like ‘W” for white and ‘B’ for black, which could be made clearer in the dataset instead of including it into the ‘Data Dictionary’ on the website. Lastly, the column ‘incident_zip’ actually represents the zip code for the medical examiner's office that receives the body, instead of the location of the overdose, which is what the name initially suggests at first glance. 
 </p>
 
 
@@ -77,19 +77,19 @@
 <ol>
   <li>
     <strong>How have overdose trends changed over time in Allegheny County?</strong>
-    <p>There have been many news reports on the increase of drug usages and particularly the rise of fentanyl and synthetic opioid crisis across the USA, but particularly in PA. Many of the last few years of political advertisements and debates have revolved round the increasing use of illegal drugs and the opioid epidemic that is hitting Pennsylvania hard. Since the dataset spans across a wide range of years (pre and post pandemic), I think it would be interesting to see if and how this news is portrayed in the Allegheny County.</p>
+    <p>There have been many news reports on the increase in drug usage and particularly the rise of fentanyl and synthetic opioid crisis across the USA, but particularly in PA. Many of the last few years of political advertisements and debates have revolved around the increasing use of illegal drugs and the opioid epidemic that is hitting Pennsylvania hard. Since the dataset spans across a wide range of years (pre- and post-pandemic), I think it would be interesting to see if and how this news is portrayed in Allegheny County.</p>
   </li>
   <li>
     <strong>Which substances are most commonly involved in fatal accidental overdoses?</strong>
-    <p>Since the dataset includes up to 10 chemical names of the drugs found in combined overdoses, it would be interesting to see which are most common (note that these are given in alphabetical order so the data might be skewed and not actually the most accurate). Based on an initial look at the different substances mentioned, there seem to be a wide variety of names mentioned. I think this would give some interesting insight on what drugs are used, if they are easily accessible, and possible even lead to some potential ways to better regulate them. Potentially this could also be looked at by zip codes, as there may be a correlation between certain drug uses by area.</p>
+    <p>Since the dataset includes up to 10 chemical names of the drugs found in combined overdoses, it would be interesting to see which are most common (note that these are given in alphabetical order, so the data might be skewed and not actually the most accurate). Based on an initial review of the different substances mentioned, there appears to be a wide variety of names. I think this would give some interesting insight on what drugs are used, if they are easily accessible, and possible even lead to some potential ways to better regulate them. Potentially this could also be looked at by zip codes, as there may be a correlation between certain drug uses by area.</p>
   </li>
   <li>
-    <strong>How common is polysubstance use overtime?</strong>
-    <p>From the current formatting of the raw data, the rows are ordered based on least number of drugs involved in the overdoes to most (up to 10). I would like to see how this varies by year, and if there is a trend in using multiple drugs at a time. Depending on what this data reveals, it would be interesting to see if multiple drugs are used when the strength of individual drug strengths are low, or if certain drugs are only used separately and never combined, or if they are all mixed at time.</p>
+    <strong>How common is polysubstance use over time?</strong>
+    <p>From the current formatting of the raw data, the rows are ordered based on the least number of drugs involved in the overdose to most (up to 10). I would like to see how this varies by year, and if there is a trend in using multiple drugs at a time. Depending on what this data reveals, it would be interesting to see if multiple drugs are used when the strength of individual drug strengths is low, or if certain drugs are only used separately and never combined, or if they are all mixed at time.</p>
   </li>
   <li>
     <strong>Are overdoses more common in certain months or seasons?</strong>
-    <p>There could be a pattern based on the seasons or fluctuation of temperatures each month in Allegany County. The colder winter months may result in spending more isolated time indoors leading to more dangerous drug usage. Whereas the warmer summer months may be associated with recreational drug use, and less fatal accidental deaths. By looking at the dataset from this angle, we might get some insight into the which times of the year there are more fatal accidental drug overdoses and if they correlate with the changes in the season, which could be motivated by the changes in temperature or even the key holiday seasons.</p>
+    <p>There could be a pattern based on the seasons or fluctuation of temperatures each month in Allegany County. The colder winter months may result in spending more isolated time indoors, leading to more dangerous drug usage. Whereas the warmer summer months may be associated with recreational drug use and less fatal accidental deaths. By examining the dataset from this angle, we may gain insight into the times of year when there are more fatal accidental drug overdoses and whether they correlate with seasonal changes, which could be motivated by temperature fluctuations or key holiday seasons.</p>
   </li>
 </ol>
 
@@ -97,7 +97,7 @@
 
 <h2>Discoveries & Insights</h2>
 <p>
-    To assess the data quality and structure of the Allegheny County Fatal Accidental Overdose dataset, we begin by exploring the trends, demographic patterns, and the drug involvement across the years. This initial analysis helps us understand the overall shape and limitations of the dataset.
+    To assess the data quality and structure of the Allegheny County Fatal Accidental Overdose dataset, we begin by exploring the trends, demographic patterns, and drug involvement across the years. This initial analysis helps us understand the overall shape and limitations of the dataset.
     
     Following this overview, we then focus on our four main questions, using more specific visualizations and data transformations to see further insights into how overdose patterns have evolved, which substances are most involved, how common polysubstance use is, and if seasonal trends exist in Allegheny County.
 </p>
@@ -106,30 +106,30 @@
 <h2>Overview of Dataset</h2>
 
 <figure>
-  <img src="images/image1.png" alt="Accidental Overdose Deaths in Allegheny County by Year" />
+  <img src="Images/Image1.png" alt="Accidental Overdose Deaths in Allegheny County by Year" />
   <figcaption>Accidental Overdose Deaths in Allegheny County by Age Group and Year</figcaption>
 </figure>
 
 
 
-<p> This bar chart shows the number of accidental overdose deaths in Allegheny County per year since 2007 till July 2025. By graphing this information, we can see that there is a lot of data collected throughout the years and that the distribution of this is not uniform. Earlier years (2007 to 2014), have fewer cases recorded, which may reflect lower overdose rates or that data collection practices were not as efficient at in the beginning. From 2015 to 2017, we see a sharp increase in recorded cases and a dramatic dip in 2018 where the number of accidental overdosing return to 2015 levels. Then continue to rise steadily till 2021/2022 where they dipped once again. 
+<p> This bar chart shows the number of accidental overdose deaths in Allegheny County per year since 2007 till July 2025. By graphing this information, we can see that there is a lot of data collected throughout the years and that the distribution of this is not uniform. Earlier years (2007 to 2014), have fewer cases recorded, which may reflect lower overdose rates or that data collection practices were not as efficient at in the beginning. From 2015 to 2017, we see a sharp increase in recorded cases and a dramatic dip in 2018 where the number of accidental overdoses returns to 2015 levels. Then continue to rise steadily till 2021/2022 where they dipped once again. 
 </p>
 
-<p>The overall shape of the graph and the pattern in it rises and falls, almost mimic the trends seen by the opioid crisis in the USA. From this article published by the US Congress, https://www.congress.gov/crs-product/IF12260, we know that the USA was facing the prescription opioid crisis from 1990s till 2010 we can see that 2007 to 2010 levels were relatively stable and the lowest (excluding 2025 as data for that year is partial). This could be indictive that these substances were still somewhat regulated and required users to go through doctors’ channels to gain access for themselves or to resell to others, thus reducing the number of accidental overdoses. Then in 2010 to 2015, the second wave of the opioid crisis hit, and access of illegal heroin became much easier. This increase is clearly reflected in the graph of Allegheny County where cases just continued to rise each time. However, we would have to examine a graph of drugs during this period of time to see if heroin was indeed the main driving factor for these increases. The third wave is also seen in this graph as from 2018 to 2022 as there is another increase in accidental overdose deaths, most likely due to the increasingly easy access to synthetic opioids. 
+<p>The overall shape of the graph and the pattern in it rise and fall, almost mimicking the trends seen by the opioid crisis in the USA. From this article published by the US Congress, https://www.congress.gov/crs-product/IF12260, we know that the USA was facing the prescription opioid crisis from the 1990s till 2010. We can see that 2007 to 2010 levels were relatively stable and the lowest (excluding 2025 as data for that year is partial). This could be indicative that these substances were still somewhat regulated and required users to go through doctors’ channels to gain access for themselves or to resell to others, thus reducing the number of accidental overdoses. Then, from 2010 to 2015, the second wave of the opioid crisis hit, and access to illegal heroin became much easier. This increase is clearly reflected in the graph of Allegheny County, where cases just continued to rise each time. However, we would have to examine a graph of drugs during this period of time to see if heroin was indeed the main driving factor for these increases. The third wave is also seen in this graph as from 2018 to 2022, as there is another increase in accidental overdose deaths, most likely due to the increasingly easy access to synthetic opioids. 
 </p>
 
-<p>Note: that the dip from 2017 to 2018 in uncharacteristic of what the national data was, which suggests that there is some local factor to consider, like natural disaster, increasing policing, budget cuts to fund this data collection, etc. that may be responsible. This data can be compared against the total deaths in Allegheny County for these years to put into perspective on how much of an issue this is – however this information does not seem to be publicly available as of now. Furthermore, these observations also raise the question of how this data can be analyzed over the years by looking at the focusing on sex, race, and area of incidents and seeing if these trends are consistent across them. 
+<p>Note: that the dip from 2017 to 2018 in uncharacteristic of what the national data was, which suggests that there is some local factor to consider, like natural disaster, increasing policing, budget cuts to fund this data collection, etc., that may be responsible. This data can be compared against the total deaths in Allegheny County for these years to put into perspective on how much of an issue this is. However, this information does not seem to be publicly available as of now. Furthermore, these observations also raise the question of how this data can be analyzed over the years by looking at focusing on sex, race, and area of incidents and seeing if these trends are consistent across them. 
 </p>
 
 
 <h3>Age Distribution of Overdose Deaths in Allegheny County</h3>
 
 <figure>
-  <img src="images/image2.png" alt="Age Distribution of Overdose Deaths in Allegheny County" />
+  <img src="Images/Image2.png" alt="Age Distribution of Overdose Deaths in Allegheny County" />
   <figcaption>Age Distribution of Overdose Deaths in Allegheny County</figcaption>
 </figure>
 
-<p>This histogram displays the distribution of ages for the accidental overdose deaths in Allegheny County, where age has been calculated by combining the number of deaths at that age from 2007 till 2025. The shape of the graph showcases that most overdose deaths occur between the ages of 25 to 40 and 50 to 55 years old. Younger ages and older ages generally don’t have as many cases. This data appears to be continuous and follows our initial intuition, however there are a surprisingly high number of cases for ages 0 to 5. If this data is accurate, this is concerning as it indicates that kids have access to these dangerous substances and highlights that this issue is affecting minors, most likely due to their guardians being users or being under the influence in their presence. Another question that could be explored, is how typical life stages stressors correlate with accidental drug case overdoses at different ages. This might be quite indicative of external pressures being the primary driving force of drug usage. </p>
+<p>This histogram displays the distribution of ages for the accidental overdose deaths in Allegheny County, where age has been calculated by combining the number of deaths at that age from 2007 to 2025. The shape of the graph showcases that most overdose deaths occur between the ages of 25 to 40, and 50 to 55 years old. Younger ages and older ages generally don’t have as many cases. This data appears to be continuous and follows our initial intuition; however, there are a surprisingly high number of cases for ages 0 to 5. If this data is accurate, this is concerning as it indicates that kids have access to these dangerous substances and highlights that this issue is affecting minors, most likely due to their guardians being users or being under the influence in their presence. Another question that could be explored is how typical life stages' stressors correlate with accidental drug overdose cases at different ages. This might be quite indicative of external pressures being the primary driving force of drug usage. </p>
 
 
 
@@ -137,7 +137,7 @@
 <h3>Distribution of Accidental Overdose Deaths by Sex in Allegheny County</h3>
 
 <figure>
-  <img src="images/image3.png" alt="Distribution of Overdose Deaths by Sex in Allegheny County" />
+  <img src="Images/Image3.png" alt="Distribution of Overdose Deaths by Sex in Allegheny County" />
   <figcaption>Distribution of Overdose Deaths by Sex in Allegheny County</figcaption>
 </figure>
 
@@ -148,7 +148,7 @@
 <h3>Distribution of Accidental Overdose Deaths by Race in Allegheny County</h3>
 
 <figure>
-  <img src="images/image4.png" alt="Distribution of Overdose Deaths by Race in Allegheny County" />
+  <img src="Images/Image4.png" alt="Distribution of Overdose Deaths by Race in Allegheny County" />
   <figcaption>Distribution of Overdose Deaths by Race in Allegheny County</figcaption>
 </figure>
 
@@ -159,11 +159,11 @@
 <h3>Accidental Overdose Deaths Distribution by Incident ZIP Code in Allegheny County</h3>
 
 <figure>
-  <img src="images/image5.png" alt="Distribution of Overdose Deaths by Incident ZIP Code in Allegheny County" />
+  <img src="Images/Image5.png" alt="Distribution of Overdose Deaths by Incident ZIP Code in Allegheny County" />
   <figcaption>Distribution of Overdose Deaths by Incident ZIP Code in Allegheny County</figcaption>
 </figure>
 
-<p>This bar chart shows the top 50 ZIP codes in Allegheny County with the highest number of accidental overdose deaths, based on the incident_zip field. Some of the of ZIP codes - like 15210 and 15212 – are responsible for a disproportionately large number of cases, but interpretation requires caution. This field reflects where the body was received, not necessarily where the overdose occurred, so it may not represent the true location of the incident. Additionally, even beyond the top 50 ZIP codes, many areas still have over 50 cases each, and some ZIP codes are incorrectly formatted (e.g., fewer than five digits), which raises a few questions about data quality and accuracy in location reporting that can be further explored by cross referencing with other dataset. </p>
+<p>This bar chart shows the top 50 ZIP codes in Allegheny County with the highest number of accidental overdose deaths, based on the incident_zip field. Some of the of ZIP codes - like 15210 and 15212 – are responsible for a disproportionately large number of cases, but interpretation requires caution. This field reflects where the body was received, not necessarily where the overdose occurred, so it may not represent the true location of the incident. Additionally, even beyond the top 50 ZIP codes, many areas still have over 50 cases each, and some ZIP codes are incorrectly formatted (e.g., fewer than five digits), which raises a few questions about data quality and accuracy in location reporting that can be further explored by cross-referencing with other datasets. </p>
 
 
 
@@ -172,32 +172,38 @@
 <h3 style="text-align: center;">How have overdose trends changed over time in Allegheny County?</h3>
 
 <figure>
-  <img src="images/image6.png" alt="Distribution of Overdose Deaths by Incident ZIP Code in Allegheny County" />
-  <figcaption>Distribution of Overdose Deaths by Incident ZIP Code in Allegheny County</figcaption>
+  <img src="Images/Image6.png" alt="Accidental Overdose Deaths in Allegheny County: Total and by Sex Over Time" />
+  <figcaption>Accidental Overdose Deaths in Allegheny County: Total and by Sex Over Time</figcaption>
 </figure>
 
-<p>This bar chart shows the top 50 ZIP codes in Allegheny County with the highest number of accidental overdose deaths, based on the incident_zip field. Some of the of ZIP codes - like 15210 and 15212 – are responsible for a disproportionately large number of cases, but interpretation requires caution. This field reflects where the body was received, not necessarily where the overdose occurred, so it may not represent the true location of the incident. Additionally, even beyond the top 50 ZIP codes, many areas still have over 50 cases each, and some ZIP codes are incorrectly formatted (e.g., fewer than five digits), which raises a few questions about data quality and accuracy in location reporting that can be further explored by cross referencing with other dataset. </p>
-
+<p>
+  This line chart shows how overdose deaths have changed over time in Allegheny County, separated by sex from 2007 through mid-2025. While both male and female cases generally follow the same overall trends, men consistently account for more cases and have a stronger impact on the shape of the total trendline. There are some differences worth noting: in 2013, female deaths decreased slightly while male deaths continued to rise. Between 2014 and 2017, male cases spiked sharply, while the increase for females was more gradual. Both groups saw a dip in 2018, and then another rise in 2021, followed by a decline beginning in 2023. These patterns suggest that while the overdose crisis affects both sexes, males are more heavily represented and drive much of the year-to-year variation in totals. This could indicate a need to tailor outreach or prevention strategies more specifically by sex.
+</p>
 
 
 <h3 style="text-align: center;">Which substances are most commonly involved in fatal accidental overdoses?</h3>
 
 <figure>
-  <img src="images/image7.png" alt="Top Substances Involved in Fatal Accidental Overdoses in Allegheny County" />
+  <img src="Images/Image7.png" alt="Top Substances Involved in Accidental Overdose Cases in Allegheny County" />
   <figcaption>Top Substances Involved in Fatal Accidental Overdoses in Allegheny County</figcaption>
 </figure>
 
-<p>This bar chart shows the most frequently involved substances in accidental overdose deaths across Allegheny County, combining data from 2007 till mid-2025. Since each accidental overdose case can include up to ten drugs, and all substances are counted if present up to 10 (which was just one case). Fentanyl is by far the most common, appearing in over 4,200 cases, followed by cocaine (just under 3,200), heroin (around 2,600), and alcohol (about 1,700). All other substances are involved in fewer than 800 cases. The clear dominance of fentanyl reflects national trends in the third wave of the opioid crisis, where synthetic opioids became increasingly dominant and dangerous. It’s important to note that the drug names in this dataset are listed in alphabetical order rather than by dosage or impact, so further analysis would be needed to understand how these substances interact within multi-drug overdoses and whether fentanyl is often a primary or secondary contributor.</p>
+<p>
+  This bar chart shows the most frequently involved substances in accidental overdose deaths across Allegheny County, combining data from 2007 to mid-2025. Since each accidental overdose case can include up to ten drugs, and all substances are counted if present, up to 10 (which was just one case). Fentanyl is by far the most common, appearing in over 4,200 cases, followed by cocaine (just under 3,200), heroin (around 2,600), and alcohol (about 1,700). All other substances are involved in fewer than 800 cases. The clear dominance of fentanyl reflects national trends in the third wave of the opioid crisis, where synthetic opioids became increasingly dominant and dangerous. It’s important to note that the drug names in this dataset are listed in alphabetical order rather than by dosage or impact, so further analysis would be needed to understand how these substances interact within multi-drug overdoses and whether fentanyl is often a primary or secondary contributor.
+</p>
+
+
+
 
 
 <h3>Trends in Top Substances Involved in Overdose Deaths by Year in Allegheny County</h3>
 
 <figure>
-  <img src="images/image8.png" alt="Trends in Top Substances Involved in Overdose Deaths by Year in Allegheny County" />
+  <img src="Images/Image8.png" alt="Trends in Top Substances Involved in Overdose Deaths by Year in Allegheny County" />
   <figcaption>Trends in Top Substances Involved in Overdose Deaths by Year in Allegheny County</figcaption>
 </figure>
 
-<p>This line graph explores how the presence of specific substances in overdose deaths has changed from 2007 through mid-2025 in Allegheny County. In the early years, cocaine was the most frequently involved substance (2007 to 2010), but heroin quickly overtook it from 2011 to 2015. Starting in 2016, fentanyl saw a sharp increase, dipped briefly in 2017, and then surged again from 2018 to 2022 before finally declining in recent years. Other substances like alprazolam and oxycodone appeared constantly with smaller fluctuations. These shifts reflect evolving drug markets and policy changes and closely mirror the waves of the national opioid epidemic in Pennsylvania. What stands out is how different substances appear to rotate in dominating the overdose substances used, suggesting that prevention strategies may have worked for some cases, but also that drug supplies were fast to pivot. These patterns also raise important questions about whether some of these shifts are due to changes in drug availability, potency, or even law enforcement and treatment policies.
+<p>This line graph explores how the presence of specific substances in overdose deaths has changed from 2007 through mid-2025 in Allegheny County. In the early years, cocaine was the most frequently involved substance (2007 to 2010), but heroin quickly overtook it from 2011 to 2015. Starting in 2016, fentanyl saw a sharp increase, dipped briefly in 2017, and then surged again from 2018 to 2022 before finally declining in recent years. Other substances like alprazolam and oxycodone appeared constantly with smaller fluctuations. These shifts reflect evolving drug markets and policy changes and closely mirror the waves of the national opioid epidemic in Pennsylvania. What stands out is how different substances appear to rotate in dominating the overdose substances used, suggesting that prevention strategies may have worked for some cases, but also that drug supplies were quick to pivot. These patterns also raise important questions about whether some of these shifts are due to changes in drug availability, potency, or even law enforcement and treatment policies.
 </p>
 
 
@@ -206,12 +212,12 @@
 <h3>Top Substances Involved in Accidental Overdose Deaths in ZIP Codes Where Medical Examiner’s Office Receives the Most Bodies in Allegheny County</h3>
 
 <figure>
-  <img src="images/image9.png" alt="Top Substances Involved in Accidental Overdose Deaths in ZIP Codes Where Medical Examiner’s Office Receives the Most Bodies in Allegheny County" />
+  <img src="Images/Image9.png" alt="Top Substances Involved in Accidental Overdose Deaths in ZIP Codes Where Medical Examiner’s Office Receives the Most Bodies in Allegheny County" />
   <figcaption>Top Substances Involved in Accidental Overdose Deaths in ZIP Codes Where Medical Examiner’s Office Receives the Most Bodies in Allegheny County</figcaption>
 </figure>
 
 <p>
-    This stacked bar chart focuses on the substances most commonly involved in overdose deaths within the top five ZIP codes that sent the highest number of cases to the Allegheny County Medical Examiner. Fentanyl is the leading substance in all five ZIP codes, followed closely by cocaine and heroin, although the order and intensity vary. One notable outlier is ZIP code 15132, which shows an unusually high concentration of hydrocodone cases. In contrast, 15212 and 15316 show no recorded involvement of the substance oxycodone, but the other three areas did. These localized differences may be tied to varying drug markets, healthcare provider practices, law enforcement patrol within different neighborhoods. Although this chart is based on where the bodies were received - not necessarily where the overdoses occurred - it still offers a some important insight into the drug use patterns. If true incident location data were available, mapping these trends geographically could provide even more precise targeting for harm reduction and public health outreach efforts.
+    This stacked bar chart focuses on the substances most commonly involved in overdose deaths within the top five ZIP codes that sent the highest number of cases to the Allegheny County Medical Examiner. Fentanyl is the leading substance in all five ZIP codes, followed closely by cocaine and heroin, although the order and intensity vary. One notable outlier is ZIP code 15132, which shows an unusually high concentration of hydrocodone cases. In contrast, 15212 and 15316 show no recorded involvement of the substance oxycodone, but the other three areas did. These localized differences may be tied to varying drug markets, healthcare provider practices, and law enforcement patrols within different neighborhoods. Although this chart is based on where the bodies were received - not necessarily where the overdoses occurred - it still offers some important insight into the drug use patterns. If true incident location data were available, mapping these trends geographically could provide even more precise targeting for harm reduction and public health outreach efforts.
 </p>
 
 
@@ -223,12 +229,13 @@
 <h3>Polysubstance Use Trends Over Time in Allegheny County</h3>
 
 <figure>
-  <img src="images/image10.png" alt="Top Substances Involved in Fatal Accidental Overdoses in Allegheny County" />
+  <img src="Images/Image10.png" alt="Top Substances Involved in Fatal Accidental Overdoses in Allegheny County" />
   <figcaption>Top Substances Involved in Fatal Accidental Overdoses in Allegheny County</figcaption>
 </figure>
 
-<p>This stacked bar chart shows how many substances were involved in each overdose case across the years from 2007 to mid-2025. Most overdose deaths involved one or two substances, especially in earlier years. Prior to 2014, cases with just a single substance were most common, though 2009 and 2010 show slight dips that may need further investigation. From 2015 onward, polysubstance use became increasingly common, with cases involving two or three substances dominating most years. Very few cases involved more than four substances at once, suggesting that extreme polysubstance overdoses are relatively rare. This visualization provides a helpful overview of how substance mixing has become more common over time, though it lacks clarity on how higher substance counts trend year by year which can be found in the next graph.</p>
-
+<p>
+  This stacked bar chart shows how many substances were involved in each overdose case across the years from 2007 to mid-2025. Most overdose deaths involved one or two substances, especially in earlier years. Prior to 2014, cases with just a single substance were most common, though 2009 and 2010 show slight dips that may need further investigation. From 2015 onward, polysubstance use became increasingly common, with cases involving two or three substances dominating most years. Very few cases involved more than four substances at once, suggesting that extreme polysubstance overdoses are relatively rare. This visualization provides a helpful overview of how substance mixing has become more common over time, though it lacks clarity on how higher substance counts trend year by year, which can be found in the next graph.
+</p>
 
 
 
@@ -236,7 +243,7 @@
 <h3>Accidental Overdose Cases by Year and Number of Substances Involved in Allegheny County</h3>
 
 <figure>
-  <img src="images/image11.png" alt="Accidental Overdose Cases by Year and Number of Substances Involved in Allegheny County" />
+  <img src="Images/Image11.png" alt="Accidental Overdose Cases by Year and Number of Substances Involved in Allegheny County" />
   <figcaption>Accidental Overdose Cases by Year and Number of Substances Involved in Allegheny County</figcaption>
 </figure>
 
@@ -254,16 +261,16 @@
 <h3 style="text-align: center;">Are overdoses more common in certain months or seasons?</h3>
 
 
-<h3>Fatal Accidental Overdoses Cases by Month and Season in Allegheny County
+<h3>Fatal Accidental Overdose Cases by Month and Season in Allegheny County
 </h3>
 
 <figure>
-  <img src="images/image12.png" alt="Fatal Accidental Overdoses Cases by Month and Season in Allegheny County" />
-  <figcaption>Fatal Accidental Overdoses Cases by Month and Season in Allegheny County</figcaption>
+  <img src="Images/Image12.png" alt="Fatal Accidental Overdoses Cases by Month and Season in Allegheny County" />
+  <figcaption>Fatal Accidental Overdose Cases by Month and Season in Allegheny County</figcaption>
 </figure>
 
 <p>
-    This color coordinated bar chart totals overdose deaths across all years by calendar month to highlight potential seasonal patterns in fatal drug use. The highest number of overdoses occurred in April, followed by March, August, December, and May. Overall, spring months appear to have the highest number of fatal overdoses, while November and January consistently report the fewest. These trends may reflect a mix of behavioral, environmental, and even psychological factors. For example, holiday may have more access to support systems or community outreach efforts in November (Thanksgiving), or new year’s resolutions in January, could temporarily reduce accidental overdose deaths. Meanwhile, spring may coincide with shifts in weather, mood, and increased outdoor activity, potentially increasing risk among certain populations. This view helps establish a baseline understanding of how timing may play a role in the risk of accidental overdoses and offers a way to look at seasonal spikes for future interventions.
+    This color-coordinated bar chart totals overdose deaths across all years by calendar month to highlight potential seasonal patterns in fatal drug use. The highest number of overdoses occurred in April, followed by March, August, December, and May. Overall, spring months appear to have the highest number of fatal overdoses, while November and January consistently report the fewest. These trends may reflect a mix of behavioral, environmental, and even psychological factors. For example, holidays may have more access to support systems or community outreach efforts in November (Thanksgiving) or New Year’s resolutions in January, which could temporarily reduce accidental overdose deaths. Meanwhile, spring may coincide with shifts in weather, mood, and increased outdoor activity, potentially increasing risk among certain populations. This view helps establish a baseline understanding of how timing may play a role in the risk of accidental overdoses and offers a way to look at seasonal spikes for future interventions.
 </p>
 
 
@@ -273,12 +280,12 @@
 </h3>
 
 <figure>
-  <img src="images/image13.png" alt="Fatal Accidental Overdoses Cases by Month and Season in Allegheny County" />
+  <img src="Images/Image13.png" alt="Fatal Accidental Overdoses Cases by Month and Season in Allegheny County" />
   <figcaption>Fatal Accidental Overdoses Cases by Month and Season in Allegheny County</figcaption>
 </figure>
 
 <p>
-This bar chart compares seasonal overdose trends across each year from 2007 to mid-2025. Spring typically reports the highest number of overdose deaths, particularly prominent most years compared to the other seasons. However, some exceptions reveal interesting shifts: in 2016, fall saw a dramatic increase and overtook all other seasons, while in 2017, spring dipped sharply before rebounding in later years. Another notable shift occurs in 2021, when summer becomes the leading season for overdose deaths - possibly reflecting delayed effects of the COVID-19 pandemic on substance use patterns and reduced access to support systems and medical treatment facilities. These seasonal fluctuations hint at broader influences such as weather, social dynamics, and structural changes in healthcare access or enforcement. Compared to the monthly breakdown, this seasonal view helps smooth year-to-year inconsistencies and highlight how certain years may behave differently than anticipated, leading to further questions about what local or national events may have played a role.
+This bar chart compares seasonal overdose trends across each year from 2007 to mid-2025. Spring typically reports the highest number of overdose deaths, particularly prominent in most years compared to the other seasons. However, some exceptions reveal interesting shifts: in 2016, fall saw a dramatic increase and overtook all other seasons, while in 2017, spring dipped sharply before rebounding in later years. Another notable shift occurs in 2021, when summer becomes the leading season for overdose deaths - possibly reflecting delayed effects of the COVID-19 pandemic on substance use patterns and reduced access to support systems and medical treatment facilities. These seasonal fluctuations hint at broader influences such as weather, social dynamics, and structural changes in healthcare access or enforcement. Compared to the monthly breakdown, this seasonal view helps smooth year-to-year inconsistencies and highlight how certain years may behave differently than anticipated, leading to further questions about what local or national events may have played a role.
 </p>
 
 
@@ -291,11 +298,11 @@ This bar chart compares seasonal overdose trends across each year from 2007 to m
 </p>
 
 <p>
-    We then investigated key questions about overdose patterns. We found that overdose deaths increased sharply starting in 2015, aligning with national opioid crisis waves, and that fentanyl became the most prevalent substance involved in recent years. Polysubstance use has grown over time, with cases involving multiple drugs becoming more common since 2015. Seasonally, spring shows the highest number of overdoses, while winter months like November and January show fewer deaths, potentially reflecting external social and behavioral factors. There were also some anomalies, such as a spike in fall 2016 and the summer peak in 2021, that may be linked to local events to the county or like the COVID-19 pandemic.
+    We then investigated key questions about overdose patterns. We found that overdose deaths increased sharply starting in 2015, aligning with national opioid crisis waves, and that fentanyl became the most prevalent substance involved in recent years. Polysubstance use has grown over time, with cases involving multiple drugs becoming more common since 2015. Seasonally, spring shows the highest number of overdoses, while winter months like November and January show fewer deaths, potentially reflecting external social and behavioral factors. There were also some anomalies, such as a spike in fall 2016 and the summer peak in 2021, that may be linked to local events in the county, or to the COVID-19 pandemic.
 </p>
 
 <p>
-    These insights highlight the complexity of the overdose crisis in Allegheny County, as a subset of the USA and Pennsylvania substance abuse crisis, and suggest opportunities for targeted interventions, and regulations. Whilst also emphasizing the need for better data collection methods in certain areas to more accurately understand and address this issue from various angles.
+    These insights highlight the complexity of the overdose crisis in Allegheny County, as a subset of the USA and Pennsylvania substance abuse crisis, and suggest opportunities for targeted interventions and regulations. Whilst also emphasizing the need for better data collection methods in certain areas to more accurately understand and address this issue from various angles.
 </p>
 </body>
 </html>
